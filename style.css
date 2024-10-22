@@ -1,0 +1,32 @@
+body {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 221, 129);
+}
+
+h1 {
+    color: #101E53;
+    font-family: monospace;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 0 4px 0 whitesmoke,
+        0 20px 5px rgba(7, 6, 6, 0.1);
+    animation: float 8s linear infinite;
+    animation-direction: alternate;
+}
+
+h1::first-letter {
+    color: fuchsia;
+}
+
+@keyframes float {
+    from {
+        transform: rotate(20deg);
+    }
+
+    to {
+        transform: rotate(-20deg);
+    }
+}
